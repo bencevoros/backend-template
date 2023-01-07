@@ -1,0 +1,14 @@
+*
+!src
+!src/**/*
+!index.ts
+!package-lock.json
+!package.json
+!tsconfig.json
+!.gitignore
+!.eslintignore
+!.eslintrc.json
+!.husky
+!.husky/**/*
+!jest.config.js
+!README.md
