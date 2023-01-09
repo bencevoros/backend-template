@@ -5,7 +5,18 @@ A backend template based on:
 * MongoDB
 * Typescript
 
-## Before use
+## Start prod
+
+1. Set environment variables for docker-compose. You can use .env in local.
+```
+MONGODB_URL=mongodb://IP_OR_DOMAIN:27017
+MONGODB_USER=dbuser
+MONGODB_PASSWORD=dbpassword
+MONGODB_DBNAME=dbname
+```
+2. docker compose up --build
+
+## Start dev
 
 Set environment variables.
 1. Install node_modules
@@ -22,9 +33,7 @@ MONGODB_DBNAME=dbname
 PORT=4000
 ```
 
-## Start dev
-
-Run
+4. Run
 ```
 npm run start:watch
 ```

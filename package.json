@@ -5,11 +5,11 @@
   "main": "./index.ts",
   "type": "module",
   "scripts": {
+    "build": "tsc",
     "start:watch": "node --watch --loader ts-node/esm --experimental-specifier-resolution node index.ts",
     "lint": "eslint . --ext .ts",
     "test": "node --loader ts-node/esm --experimental-vm-modules --experimental-specifier-resolution node node_modules/jest/bin/jest.js",
-    "test:watch": "node --loader ts-node/esm --experimental-vm-modules --experimental-specifier-resolution node node_modules/jest/bin/jest.js --watch",
-    "prepare": "husky install"
+    "test:watch": "node --loader ts-node/esm --experimental-vm-modules --experimental-specifier-resolution node node_modules/jest/bin/jest.js --watch"
   },
   "author": "Bence Voros",
   "license": "MIT",

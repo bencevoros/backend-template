@@ -1,0 +1,18 @@
+version: '3.8'
+services:
+
+  backend_template:
+    restart: unless-stopped
+    container_name: backend_template
+    build:
+      dockerfile: Dockerfile
+      context: '.'
+    environment:
+      NODE_ENV: production
+      PORT: 3000
+      MONGODB_URL: '${MONGODB_URL}'
+      MONGODB_USER: '${MONGODB_USER}'
+      MONGODB_DBNAME: '${MONGODB_DBNAME}'
+      MONGODB_PASSWORD: '${MONGODB_PASSWORD}'
+    ports:
+      - 3000:3000
