@@ -28,3 +28,24 @@ Run
 ```
 npm run start:watch
 ```
+
+## Run tests
+
+Create .env.test in the root directory with the following variables:
+```
+MONGODB_URL=mongodb://localhost:27017
+MONGODB_USER=dbuser
+MONGODB_PASSWORD=dbpassword
+MONGODB_DBNAME=dbname
+PORT=4000
+```
+
+Run once:
+```
+npm test
+```
+
+Run test watcher:
+```
+npm run test:watch
+```

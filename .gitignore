@@ -12,3 +12,5 @@
 !.husky/**/*
 !jest.config.js
 !README.md
+!test
+!test/**/*
